@@ -6,7 +6,7 @@ import { ComponentProps } from 'react';
 type StoryProps = ComponentProps<typeof Input>;
 
 const meta: Meta<StoryProps> = {
-  title: 'Example/Input',
+  title: 'Basic/Input',
   component: Input,
   parameters: {
     layout: 'centered',

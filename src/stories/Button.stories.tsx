@@ -7,7 +7,7 @@ import { ComponentProps } from 'react';
 type StoryProps = ComponentProps<typeof Button>;
 
 const meta: Meta<StoryProps> = {
-  title: 'Example/Button',
+  title: 'Basic/Button',
   component: Button,
   parameters: {
     layout: 'centered',

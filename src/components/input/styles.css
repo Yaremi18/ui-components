@@ -1,16 +1,16 @@
 .storybook-input {
   border-radius: 0.5em;
-  border: 1px solid #ccc;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px solid var(--accent);
+  font-family: var(--font-family);
   &:focus {
     outline: none;
-    border-color: #dd4ef3;
+    border-color: var(--primary);
   }
   &:hover {
-    box-shadow: 0 0 4px #dd4ef3;
+    box-shadow: 0 0 4px var(--primary);
   }
   &::placeholder {
-    color: #ccc;
+    color: var(--accent);
   }
 }
 .storybook-input--sm {

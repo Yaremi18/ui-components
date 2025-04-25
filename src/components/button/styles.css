@@ -5,10 +5,10 @@
   border-radius: 0.5em;
   font-weight: 700;
   line-height: 1;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
 }
 .storybook-button--primary {
-  background-color: #dd4ef3;
+  background-color: var(--primary);
   color: white;
 }
 .storybook-button--default {
@@ -18,9 +18,9 @@
 }
 .storybook-button--link {
   background-color: transparent;
-  color: #dd4ef3b1;
+  color: var(--primary-light);
   &:hover {
-    color: #dd4ef3;
+    color: var(--primary);
   }
 }
 .storybook-button--sm {
