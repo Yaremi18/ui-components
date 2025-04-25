@@ -1,0 +1,27 @@
+.storybook-input {
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  &:focus {
+    outline: none;
+    border-color: #dd4ef3;
+  }
+  &:hover {
+    box-shadow: 0 0 4px #dd4ef3;
+  }
+  &::placeholder {
+    color: #ccc;
+  }
+}
+.storybook-input--sm {
+  padding: 9px 4px;
+  font-size: 12px;
+}
+.storybook-input--md {
+  padding: 11px 6px;
+  font-size: 14px;
+}
+.storybook-input--lg {
+  padding: 12px 7px;
+  font-size: 16px;
+}
