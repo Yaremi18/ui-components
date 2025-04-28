@@ -30,10 +30,18 @@ const meta: Meta<typeof Text.Paragraph> = {
 
 export default meta;
 
+const paragraphText =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et orci laoreet, varius enim sed, ullamcorper lacus. Suspendisse ac dolor turpis. Praesent id pharetra tellus. In egestas turpis vel justo facilisis, vitae viverra mi faucibus. Proin id diam sagittis, porta quam sit amet, luctus est. Integer vitae nisi eget mi pharetra congue. Vestibulum ultricies, urna ac ultricies tristique, neque turpis consequat mi, sit amet ultrices dui dolor sed libero. Donec quam tortor, porttitor ut varius et, aliquet vitae lorem. Sed dictum egestas ipsum.';
+
 export const Paragraph: ParagraphStory = {
   args: {
-    children:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et orci laoreet, varius enim sed, ullamcorper lacus. Suspendisse ac dolor turpis. Praesent id pharetra tellus. In egestas turpis vel justo facilisis, vitae viverra mi faucibus. Proin id diam sagittis, porta quam sit amet, luctus est. Integer vitae nisi eget mi pharetra congue. Vestibulum ultricies, urna ac ultricies tristique, neque turpis consequat mi, sit amet ultrices dui dolor sed libero. Donec quam tortor, porttitor ut varius et, aliquet vitae lorem. Sed dictum egestas ipsum.',
+    children: paragraphText,
   },
-  render: (args) => <Text.Paragraph {...args} />,
+  parameters: {
+    docs: {
+      source: {
+        code: `<Text.Paragraph>${paragraphText}</Text.Paragraph>`,
+      },
+    },
+  },
 };

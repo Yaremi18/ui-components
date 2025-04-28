@@ -34,35 +34,70 @@ const meta: Meta<typeof Text.Title> = {
 
 export default meta;
 
+const text = {
+  1: 'This is a title level 1',
+  2: 'This is a title level 2',
+  3: 'This is a title level 3',
+  4: 'This is a title level 4',
+};
+
 export const TitleLevel1: TitleStory = {
   args: {
-    children: 'This is a title level 1',
+    children: text[1],
     level: 1,
     divider: false,
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `<Text.Title level={1}>${text[1]}</Text.Title>`,
+      },
+    },
   },
 };
 
 export const TitleLevel2: TitleStory = {
   args: {
-    children: 'This is a title level 2',
+    children: text[2],
     level: 2,
     divider: false,
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `<Text.Title level={2}>${text[2]}</Text.Title>`,
+      },
+    },
   },
 };
 
 export const TitleLevel3: TitleStory = {
   args: {
-    children: 'This is a title level 3',
+    children: text[3],
     level: 3,
     divider: false,
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `<Text.Title level={3}>${text[3]}</Text.Title>`,
+      },
+    },
   },
 };
 
 export const TitleLevel4: TitleStory = {
   args: {
-    children: 'This is a title level 4',
+    children: text[4],
     level: 4,
     divider: false,
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `<Text.Title level={4}>${text[4]}</Text.Title>`,
+      },
+    },
   },
 };
 
@@ -71,5 +106,12 @@ export const TitleWithDivider: TitleStory = {
     children: 'This is a title with divider',
     level: 1,
     divider: true,
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `<Text.Title divider level={1}>This is a title with divider</Text.Title>`,
+      },
+    },
   },
 };

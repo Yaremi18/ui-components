@@ -5,7 +5,7 @@ import { ComponentProps } from 'react';
 
 type StoryProps = ComponentProps<typeof Text>;
 
-const meta: Meta<StoryProps> = {
+const meta: Meta<typeof Text> = {
   title: 'Basic/Text',
   component: Text,
   parameters: {
