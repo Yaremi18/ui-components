@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+# 📦 ui-components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Reusable UI components library built with **React** and documented using **Storybook**. This project aims to provide a consistent, scalable, and customizable design system for web applications.
 
-Currently, two official plugins are available:
+## 🧩 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`ui-components` is a collection of modular and tested React components, designed to accelerate front-end development across multiple projects. Each component is isolated, themed, and documented with live previews using Storybook.
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** – UI library
+- **Storybook** – Component documentation and showcase
+- **Vite** – Lightning-fast bundler and dev server
+- **ESLint & Prettier** – Code quality and formatting
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Install, run and build
+
+First clone the repository and install the dependencies
+
+```bash
+git clone https://github.com/your-username/ui-components.git
+cd ui-components
+npm install
+# or
+yarn install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+To start the Storybook development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run storybook
+# or
+yarn storybook
 ```
+
+This will open Storybook at http://localhost:6006.
+
+### Build the component library
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+The output will go to the dist directory.
+
+### Build the Storybook for static hosting
+
+```bash
+npm run build-storybook
+# or
+yarn build-storybook
+```
+
+The output will go to the storybook-static directory.
