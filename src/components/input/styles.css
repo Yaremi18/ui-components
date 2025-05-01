@@ -15,13 +15,36 @@
 }
 .storybook-input--sm {
   padding: 9px 4px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .storybook-input--md {
   padding: 11px 6px;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 .storybook-input--lg {
   padding: 12px 7px;
-  font-size: 16px;
+  font-size: 1rem;
+}
+.storybook-input--vertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.storybook-input--horizontal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.storybook-input-label--sm {
+  font-size: 0.7rem;
+}
+.storybook-input-label--md {
+  font-size: 0.85rem;
+}
+.storybook-input-label--lg {
+  font-size: 0.85rem;
 }
