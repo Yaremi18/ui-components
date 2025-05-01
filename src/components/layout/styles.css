@@ -1,0 +1,25 @@
+.ui-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.ui-layout-header {
+  background-color: var(--primary);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: var(--header-text-color);
+}
+.ui-layout-content {
+  flex: 1;
+  padding: 2em 1em;
+  background-color: #ffffff;
+}
+.ui-layout-footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: var(--footer-text-color);
+}

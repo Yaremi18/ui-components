@@ -3,6 +3,9 @@
   --primary-light: #dd4ef3b1;
   --accent: #ccc;
 
+  --header-text-color: #fff;
+  --footer-text-color: #727272;
+
   --border-radius: 0.5em;
   --font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
