@@ -1,4 +1,4 @@
-.storybook-button {
+.ui-button {
   display: inline-block;
   cursor: pointer;
   border: 0;
@@ -7,31 +7,31 @@
   line-height: 1;
   font-family: var(--font-family);
 }
-.storybook-button--primary {
+.ui-button--primary {
   background-color: var(--primary);
   color: white;
 }
-.storybook-button--default {
+.ui-button--default {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   background-color: transparent;
   color: #333;
 }
-.storybook-button--link {
+.ui-button--link {
   background-color: transparent;
   color: var(--primary-light);
   &:hover {
     color: var(--primary);
   }
 }
-.storybook-button--sm {
+.ui-button--sm {
   padding: 10px 16px;
   font-size: 12px;
 }
-.storybook-button--md {
+.ui-button--md {
   padding: 11px 20px;
   font-size: 14px;
 }
-.storybook-button--lg {
+.ui-button--lg {
   padding: 12px 24px;
   font-size: 16px;
 }

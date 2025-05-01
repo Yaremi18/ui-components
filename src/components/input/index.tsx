@@ -26,15 +26,13 @@ export const Input = ({
   ...props
 }: InputProps) => {
   return (
-    <div className={`storybook-input--${orientation}`}>
+    <div className={`ui-input--${orientation}`}>
       {label && (
-        <label className={`storybook-input-label--${inputSize}`}>{label}</label>
+        <label className={`ui-input-label--${inputSize}`}>{label}</label>
       )}
       <input
         type={type}
-        className={['storybook-input', `storybook-input--${inputSize}`].join(
-          ' '
-        )}
+        className={['ui-input', `ui-input--${inputSize}`].join(' ')}
         {...props}
       />
     </div>

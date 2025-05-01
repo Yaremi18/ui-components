@@ -7,7 +7,7 @@ export interface TextProps {
 
 /** Text component for displaying text content. It includes subcomponents for titles and paragraphs. */
 const Text = ({ children }: TextProps) => {
-  return <span className="storybook-text">{children}</span>;
+  return <span className="ui-text">{children}</span>;
 };
 
 export interface TitleProps {
@@ -22,9 +22,9 @@ export interface TitleProps {
 /** Title component for displaying headings. */
 const Title = ({ level = 1, divider, children }: TitleProps) => {
   const className = [
-    'storybook-text',
-    `storybook-title--${level}`,
-    divider ? 'storybook-title-divider' : '',
+    'ui-text',
+    `ui-title--${level}`,
+    divider ? 'ui-title-divider' : '',
   ].join(' ');
 
   switch (level) {
@@ -48,7 +48,7 @@ export interface ParagraphProps {
 
 /** Paragraph component for displaying text content. */
 const Paragraph = ({ children }: ParagraphProps) => {
-  return <p className="storybook-text">{children}</p>;
+  return <p className="ui-text">{children}</p>;
 };
 
 /** Title component for displaying headings. */
