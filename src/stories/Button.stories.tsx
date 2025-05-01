@@ -28,7 +28,7 @@ type Story = StoryObj<StoryProps>;
 
 export const Primary: Story = {
   args: {
-    type: 'primary',
+    btnType: 'primary',
     size: 'md',
     children: 'Primary button',
   },
@@ -36,7 +36,7 @@ export const Primary: Story = {
 
 export const Default: Story = {
   args: {
-    type: 'default',
+    btnType: 'default',
     size: 'md',
     children: 'Default button',
   },
@@ -44,7 +44,7 @@ export const Default: Story = {
 
 export const Link: Story = {
   args: {
-    type: 'link',
+    btnType: 'link',
     size: 'md',
     children: 'Link button',
   },
@@ -52,7 +52,7 @@ export const Link: Story = {
 
 export const Large: Story = {
   args: {
-    type: 'primary',
+    btnType: 'primary',
     size: 'lg',
     children: 'Large button',
   },
@@ -60,7 +60,7 @@ export const Large: Story = {
 
 export const Medium: Story = {
   args: {
-    type: 'primary',
+    btnType: 'primary',
     size: 'md',
     children: 'Medium button',
   },
@@ -68,7 +68,7 @@ export const Medium: Story = {
 
 export const Small: Story = {
   args: {
-    type: 'primary',
+    btnType: 'primary',
     size: 'sm',
     children: 'Small button',
   },
@@ -76,7 +76,7 @@ export const Small: Story = {
 
 export const BackgroundColor: Story = {
   args: {
-    type: 'primary',
+    btnType: 'primary',
     size: 'md',
     children: 'Background color',
     backgroundColor: '#4e67f3',

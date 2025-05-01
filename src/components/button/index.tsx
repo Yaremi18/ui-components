@@ -1,8 +1,8 @@
 import './styles.css';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** Is this the principal call to action on the page? */
-  type?: 'primary' | 'default' | 'link';
+  btnType?: 'primary' | 'default' | 'link';
   /** What background color to use */
   backgroundColor?: string;
   /** How large should the button be? */
@@ -15,7 +15,7 @@ interface ButtonProps {
 
 /** Button component for user interaction */
 export const Button = ({
-  type = 'default',
+  btnType = 'default',
   size = 'md',
   backgroundColor,
   children,
@@ -24,9 +24,11 @@ export const Button = ({
   return (
     <button
       type="button"
-      className={['ui-button', `ui-button--${type}`, `ui-button--${size}`].join(
-        ' '
-      )}
+      className={[
+        'ui-button',
+        `ui-button--${btnType}`,
+        `ui-button--${size}`,
+      ].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
